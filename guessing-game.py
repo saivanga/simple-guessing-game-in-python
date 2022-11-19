@@ -1,21 +1,23 @@
 from random import randint
 
-answer = input(
-    "This is a game where you guess a number between 1 and 100. If you guess correctly, you win. What is a number between 1 and 100: "
-)
+print("Welcome to Guessing game")
+print("We have a number between 1 and 100")
+print("Try guessing our number to complete the game")
 
-real_num = randint(1, 100)
-print(real_num)
+isGameCompleted = False
+numberOfGuesses = 0
+guessedNumber = randint(1, 100)
 
-if int(answer) == real_num:
-    print("Congratulations! You Won!")
-
-while int(answer) < real_num and int(answer) != real_num:
-    print("That was too low!")
-    input("What is a number between " + str(answer) + " and 100: ")
-
-
-while int(answer) > real_num and int(answer) != real_num:
-    print("That was too high!")
-    input("What is a number between 1 and " + str(answer) + ": ")
-
+while isGameCompleted == False:
+    numberOfGuesses = numberOfGuesses + 1
+    numberGuessed = int(input("Guess: " + str(numberOfGuesses) + ". Enter your guess: "))
+    if numberGuessed < 1 or numberGuessed > 100:
+        print("Number should be between 1 and 100")
+    if numberGuessed < guessedNumber:
+        print("Your number is less than the number we have")
+    elif numberGuessed > guessedNumber:
+        print("Your number is greater than the number we have")
+    else:
+        print("You successfully guessed in " + str(numberOfGuesses) + " guesses.")
+        isGameCompleted = True
+        print("Game completed!")

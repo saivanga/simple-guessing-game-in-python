@@ -1,7 +1,4 @@
 {
-  "editor.wordWrap": "on",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.requireConfig": true
 }
