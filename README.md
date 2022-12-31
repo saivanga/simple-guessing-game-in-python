@@ -1,12 +1,12 @@
-# name-of-repository
+# Simple Guessing Game in Python
 
-### description-here
+### A game where you guess a number
 
 Links:
 
-- [Demo](https://samasala.github.io/<repository-name>/)
+- [Demo](https://samasala.github.io/simple-guessing-game-in-python/)
 
-- [Repository](https://samasala.github.io/<repository-name>/)
+- [Repository](https://samasala.github.io/simple-guessing-game-in-python/)
 
 Authors:
 
